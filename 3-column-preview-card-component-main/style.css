@@ -1,0 +1,117 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px 
+*/
+
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); font-family: 'Lexend Deca', sans-serif; font-weight: 600; line-height: 1rem; color:hsl(179, 100%, 13%);}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* font-family: 'Lexend Deca', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+/* font-family: 'Big Shoulders Display', cursive; */
+
+:root{
+    color: hsl(31, 77%, 52%);
+    color: hsl(184, 100%, 22%);
+    color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+    color: hsl(0, 0%, 95%); /*background, headings, buttons*/
+}
+
+
+body{
+    font-size: 15px;
+    position: relative;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.grid-container{
+    margin: 2rem auto;
+    margin-bottom: 5rem;
+    max-width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sedans-card{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sedans-card > button{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs-card{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs-card > button{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury-card{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury-card > button {
+    color: hsl(179, 100%, 13%);
+}
+
+.grid-card{
+    padding: 2.5rem;
+    /* position: relative; */
+}
+
+.grid-card h1{
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 2rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.75);   
+}
+
+.grid-card p{
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);   
+}
+
+.grid-card button{
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 1rem 1.8rem;
+    border-radius: 25px;
+    margin-top: 2rem;
+    font-weight: 600;
+    border: solid 1px hsl(0, 0%, 95%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.grid-card button:hover{
+    background-color: transparent;
+    color: inherit;
+}
+
+
+@media(min-width:375px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 900px;
+    }
+}

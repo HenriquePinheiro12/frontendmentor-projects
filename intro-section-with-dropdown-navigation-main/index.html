@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="index.js" defer></script>
+
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="left-options">
+          <img class="main-logo" src="images/logo.svg" alt="snap-logo" />
+          
+          <ul class="desktop-menu-options">
+            
+            <li class="option">
+              <div class="option-head">
+                <span>Features</span>
+                <img
+                  src="images/icon-arrow-down.svg"
+                  alt="arrow-down"
+                  class="arrow-down"
+                />
+                <img
+                  src="images/icon-arrow-up.svg"
+                  alt="arrow-up"
+                  class="arrow-up"
+                />
+              </div>
+              <ul class="dropdown features">
+                <li>
+                  <img src="images/icon-todo.svg" alt="todo-icon" />
+                  <span>Todo List</span>
+                </li>
+  
+                <li>
+                  <img src="images/icon-calendar.svg" alt="calendar-icon" />
+                  <span>Calendar</span>
+                </li>
+  
+                <li>
+                  <img src="images/icon-reminders.svg" alt="reminders-icon" />
+                  <span>Reminders</span>
+                </li>
+  
+                <li>
+                  <img src="images/icon-planning.svg" alt="planning-icon" />
+                  <span>Planning</span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="option">
+              <div class="option-head">
+                <span>Company</span>
+                <img
+                  src="images/icon-arrow-down.svg"
+                  alt="arrow-down"
+                  class="arrow-down"
+                />
+                <img
+                  src="images/icon-arrow-up.svg"
+                  alt="arrow-up"
+                  class="arrow-up"
+                />
+              </div>
+
+              <ul class="dropdown company">
+                <li>
+                  <span>History</span>
+                </li>
+  
+                <li>
+                  <span>Our Team</span>
+                </li>
+  
+                <li>
+                  <span>Blog</span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="option">
+              <div class="option-head">
+                <span>Careers</span>
+              </div>
+            </li>
+
+            <li class="option">
+              <div class="option-head">
+                <span>About</span>
+              </div>
+            </li>
+
+          </ul>
+        </nav>
+        
+        <nav class="right-options">
+          <div class="log-options">
+            <button class="login">Login</button>
+            <button class="register">Register</button>
+          </div>
+
+          <img data-target="mobile-menu overlay" class="open-menu-btn" src="images/icon-menu.svg" alt="hamburger-icon" />
+        </nav>
+        
+        
+      </header>
+
+      <section class="content">
+        <div class="hero">
+          <img src="images/image-hero-desktop.png" alt="" srcset="">
+        </div>
+
+
+        <div class="sub-content">
+          <div class="about">
+            <h1><span>Make</span> remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="learn-more">Learn more</button>
+          </div>
+          <div class="clients">
+            <ul>
+              <li class="clients">
+                <img src="images/client-databiz.svg" alt="databiz-logo" />
+              </li>
+              <li class="clients">
+                <img src="images/client-audiophile.svg" alt="audiophile-logo" />
+              </li>
+              <li class="clients">
+                <img src="images/client-meet.svg" alt="meet-logo" />
+              </li>
+              <li class="clients">
+                <img src="images/client-maker.svg" alt="maker-logo" />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </section>
+      <!--content-->
+
+      <div id="overlay" class="overlay"></div>
+
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-head">
+          <img data-target="mobile-menu" class="close-menu-btn" src="images/icon-close-menu.svg" alt="close-menu" />
+        </div>
+
+        <ul class="mobile-menu-options">
+          <li data-target="features" id="features" class="option">
+            <div class="option-head">
+              <span>Features</span>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="arrow-down"
+                class="arrow-down"
+              />
+
+              <img
+                src="images/icon-arrow-up.svg"
+                alt="arrow-up"
+                class="arrow-up"
+              />
+            </div>
+
+            <ul class="features sub-menu">
+              <li>
+                <img src="images/icon-todo.svg" alt="todo-icon" />
+                <span>Todo List</span>
+              </li>
+
+              <li>
+                <img src="images/icon-calendar.svg" alt="calendar-icon" />
+                <span>Calendar</span>
+              </li>
+
+              <li>
+                <img src="images/icon-reminders.svg" alt="reminders-icon" />
+                <span>Reminders</span>
+              </li>
+
+              <li>
+                <img src="images/icon-planning.svg" alt="planning-icon" />
+                <span>Planning</span>
+              </li>
+            </ul>
+          </li>
+
+          <li data-target="company" id="company" class="option">
+            <div class="option-head">
+              <span>Company</span>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="arrow-down"
+                class="arrow-down"
+              />
+
+              <img
+                src="images/icon-arrow-up.svg"
+                alt="arrow-up"
+                class="arrow-up"
+              />
+            </div>
+
+            <ul class="sub-menu">
+              <li>
+                <span>History</span>
+              </li>
+
+              <li>
+                <span>Our Team</span>
+              </li>
+
+              <li>
+                <span>Blog</span>
+              </li>
+            </ul>
+          </li>
+
+          <li data-target="careers" id="careers" class="option">
+            <div class="option-head">
+              <span>Careers</span>
+            </div>
+          </li>
+
+          <li data-target="about" id="about" class="option">
+            <div class="option-head">
+              <span>About</span>
+            </div>
+          </li>
+        </ul>
+        <!--options-->
+      </div>
+      <!--mobile-menu-->
+    </main>
+  </body>
+</html>

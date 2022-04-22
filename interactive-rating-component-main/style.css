@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Overpass:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff)
+}
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    --fs: 15px;
+    --fw1: 400;
+    --fw2: 700;
+    --ff: 'Overpass', sans-serif;
+}
+
+.hidden{
+    display: none;
+}
+
+main{
+    background: var(--Very-Dark-Blue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rating, .thank{
+    background-color: var(--Dark-Blue);
+    color: var(--Light-Grey);
+    max-width: 90%;
+    width: 400px;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+h1{
+    color: var(--White);
+    margin: 1rem 0;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.rating img{
+    background: var(--Medium-Grey);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.rating ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+li{
+    list-style: none;
+}
+
+li label{
+    border: solid 1px var(--Light-Grey);
+    padding: .5em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    cursor: pointer;
+}
+
+label:hover{
+    background:var(--Medium-Grey);
+    color: var(--White);
+}
+
+/* needs js */
+label.active{
+    color: var(--White);
+    background: var(--Orange);
+    border: none;
+}
+
+p{
+    font-weight: bold;
+    line-height: 1.4rem;
+    margin-bottom: 2rem;
+    word-wrap: wrap;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+button.submit{
+    background: var(--Orange);
+    color: var(--White);
+    border: none;
+    outline: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    padding: 1rem;
+    border-radius: 25px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+button.submit:hover{
+    background: var(--White);
+    color: var(--Orange);
+}
+
+.thank {
+    text-align: center;
+}
+
+.thank p{
+    margin-bottom: 0;
+    /* max-width: 90%; */
+    margin: 0 auto;
+}
+
+.thank h3{
+    color: var(--Orange);
+    font-weight: normal;
+    margin: 1rem auto;
+}
+
+@media(min-width: 375px){
+    
+}

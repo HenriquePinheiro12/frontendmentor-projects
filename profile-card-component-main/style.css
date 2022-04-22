@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; color: #fff;position: absolute; bottom: 2rem;}
+.attribution a { color: hsl(228, 45%, 44%);}
+
+:root{
+    color:hsl(185, 75%, 39%);
+    color:hsl(229, 23%, 23%);
+    color:hsl(227, 10%, 46%);
+    color:hsl(0, 0%, 59%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main{
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+
+}
+
+main > img{
+    position: absolute;
+    width: 500px;
+}
+
+ .top-bg-pattern{
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-bg-pattern{
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
+
+.container{
+    background-color: #fff;
+    z-index: 2;
+    border-radius: 20px;
+    margin: 2rem auto;
+    margin-bottom: 5rem;
+    overflow: hidden;
+    max-width: 80%;
+    width: 500px;
+    box-shadow: 0 10px 20px 5px rgba(45, 50, 72, 0.5);
+}
+
+.content{
+    text-align: center;
+}
+
+.hero-background{
+    height: 100px;
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about{
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 1rem;
+}
+
+.about > img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    border-radius: 50%;
+    border: solid 5px #fff;
+}
+
+.about h2, .status li span{
+    color:hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
+.about h2 span, .about h3, .status li{
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.about h2{
+    font-size: 1.3rem;
+}
+
+.about h3{
+    font-size: 1rem;
+    margin:.5rem auto;
+    /* margin-bottom: 1rem; */
+}
+
+.about::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: hsl(0, 0%, 80%);
+}
+
+.status{
+    padding: 1.5rem;
+}
+
+.status ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.status li{
+    font-size: .8rem;
+    line-height: 1.3rem;
+    letter-spacing: 1px;
+    margin:.5rem;
+}
+
+.status li span{
+    font-size:1.3rem;
+}
+
+@media(min-width:375px){
+    .hero-background{
+        height: 15vw;
+        min-height:150px
+    }
+}
